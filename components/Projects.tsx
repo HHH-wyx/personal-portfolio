@@ -50,13 +50,20 @@ export default function Projects() {
               className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-200 hover:scale-105 focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2"
               tabIndex={0}
             >
-              <div className="relative h-48 w-full bg-gray-200">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover"
-                />
+              <div className="relative h-48 w-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
+                {project.image && !project.image.includes('project') ? (
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                  />
+                ) : (
+                  <div className="text-center p-4">
+                    <div className="text-4xl mb-2">🚀</div>
+                    <div className="text-gray-600 text-sm font-semibold">{project.title}</div>
+                  </div>
+                )}
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">

@@ -38,14 +38,20 @@ export default function Hero() {
     >
       <div className="container mx-auto max-w-4xl text-center">
         <div className="mb-8 animate-slide-up">
-          <div className="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-primary/20 shadow-lg">
-            <Image
-              src={data.personal.avatar}
-              alt={data.personal.name}
-              fill
-              className="object-cover"
-              priority
-            />
+          <div className="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-primary/20 shadow-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+            {data.personal.avatar && data.personal.avatar !== '/avatar.jpg' ? (
+              <Image
+                src={data.personal.avatar}
+                alt={data.personal.name}
+                fill
+                className="object-cover"
+                priority
+              />
+            ) : (
+              <span className="text-white text-4xl font-bold">
+                {data.personal.name.charAt(0)}
+              </span>
+            )}
           </div>
         </div>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4 animate-slide-up">
