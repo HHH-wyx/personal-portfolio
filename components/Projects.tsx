@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import Image from 'next/image';
 import data from '@/content/data.json';
 
 export default function Projects() {
@@ -51,19 +50,10 @@ export default function Projects() {
               tabIndex={0}
             >
               <div className="relative h-48 w-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
-                {project.image && !project.image.includes('project') ? (
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover"
-                  />
-                ) : (
-                  <div className="text-center p-4">
-                    <div className="text-4xl mb-2">🚀</div>
-                    <div className="text-gray-600 text-sm font-semibold">{project.title}</div>
-                  </div>
-                )}
+                <div className="text-center p-4">
+                  <div className="text-4xl mb-2">🚀</div>
+                  <div className="text-gray-600 text-sm font-semibold">{project.title}</div>
+                </div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
