@@ -1,0 +1,64 @@
+{
+  "personal": {
+    "name": "您的姓名",
+    "title": "全栈开发者 / 设计师",
+    "bio": "我是一名充满热情的全栈开发者，专注于创建美观且功能强大的 Web 应用。",
+    "avatar": "/avatar.jpg",
+    "location": "中国",
+    "email": "your.email@example.com",
+    "website": "https://yourwebsite.com"
+  },
+  "social": {
+    "github": "https://github.com/yourusername",
+    "twitter": "https://twitter.com/yourusername",
+    "linkedin": "https://linkedin.com/in/yourusername",
+    "email": "mailto:your.email@example.com"
+  },
+  "about": {
+    "title": "关于我",
+    "description": "我是一名经验丰富的全栈开发者，擅长使用现代 Web 技术栈构建高性能应用。我热爱学习新技术，享受将创意转化为现实的过程。",
+    "skills": [
+      "React / Next.js",
+      "TypeScript",
+      "Node.js",
+      "Tailwind CSS",
+      "Python",
+      "UI/UX 设计"
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "项目名称 1",
+      "description": "这是一个出色的项目，展示了我的技术能力和创造力。",
+      "image": "/project1.jpg",
+      "tags": ["React", "Next.js", "TypeScript"],
+      "link": "https://project1.com",
+      "github": "https://github.com/username/project1"
+    },
+    {
+      "id": 2,
+      "title": "项目名称 2",
+      "description": "另一个令人印象深刻的项目，具有出色的用户体验。",
+      "image": "/project2.jpg",
+      "tags": ["Vue.js", "Node.js", "MongoDB"],
+      "link": "https://project2.com",
+      "github": "https://github.com/username/project2"
+    },
+    {
+      "id": 3,
+      "title": "项目名称 3",
+      "description": "这个项目展示了我在设计和开发方面的综合能力。",
+      "image": "/project3.jpg",
+      "tags": ["React", "Tailwind CSS", "Firebase"],
+      "link": "https://project3.com",
+      "github": "https://github.com/username/project3"
+    }
+  ],
+  "contact": {
+    "title": "联系我",
+    "description": "如果您有任何问题或合作意向，欢迎通过以下方式联系我。",
+    "email": "your.email@example.com"
+  }
+}
+
